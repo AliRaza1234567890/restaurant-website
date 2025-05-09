@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites Restaurant</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background: #b71c1c;
+            color: #fff;
+            padding: 30px 0 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background: #880808;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+            padding: 30px 40px;
+        }
+
+        h2 {
+            color: #b71c1c;
+            border-bottom: 2px solid #b71c1c;
+            padding-bottom: 8px;
+            margin-bottom: 25px;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .dish {
+            background: #fbe9e7;
+            border-radius: 8px;
+            padding: 18px 15px;
+            box-shadow: 0 1px 4px rgba(183, 28, 28, 0.07);
+            transition: transform 0.2s;
+        }
+
+        .dish:hover {
+            transform: translateY(-5px) scale(1.03);
+        }
+
+        .dish h3 {
+            margin: 0 0 8px 0;
+            color: #880808;
+        }
+
+        .dish p {
+            margin: 0 0 10px 0;
+            font-size: 0.98em;
+        }
+
+        .dish .price {
+            font-weight: bold;
+            color: #b71c1c;
+            font-size: 1.1em;
+        }
+
+        footer {
+            background: #880808;
+            color: #fff;
+            text-align: center;
+            padding: 18px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 18px 5vw;
+            }
+
+            .menu {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>AR Bites Restaurant</h1>
+        <p>Welcome to the best place for food lovers!</p>
+    </header>
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container" id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu">
+            <div class="dish">
+                <h3>Margherita Pizza</h3>
+                <img src="margherita.jpg" alt="Margherita Pizza"
+                    style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                <p>Classic pizza with tomato sauce, mozzarella, and basil.</p>
+                <span class="price">Rs.1000</span>
+            </div>
+            <div class="dish">
+                <h3>Pepperoni Pizza</h3>
+                <img src="pepperoni pizza.jpg" alt="Pepperoni Pizza"
+                    style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                <p>Loaded with spicy pepperoni and mozzarella cheese.</p>
+                <span class="price">Rs.1200</span>
+            </div>
+            <div class="dish">
+                <h3>Chicken Alfredo Pasta</h3>
+                <img src="alfredo pasta.jpg" alt="Chicken Alfredo Pasta"
+                    style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                <p>Creamy Alfredo sauce with grilled chicken and fettuccine.</p>
+                <span class="price">Rs.1500</span>
+            </div>
+            <div class="dish">
+                <h3>Spaghetti Bolognese</h3>
+                <img src="spaghetti bolognese.jpg" alt="Spaghetti Bolognese"
+                    style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                <p>Rich meat sauce served over spaghetti noodles.</p>
+                <span class="price">Rs.2000</span>
+            </div>
+            <div class="dish">
+                <h3>Caesar Salad</h3>
+                <img src="caesar salad.jpg" alt="Caesar Salad"
+                    style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                <p>Crisp romaine, parmesan, croutons, and Caesar dressing.</p>
+                <span class="price">Rs.600</span>
+            </div>
+            <div class="dish">
+                <h3>Greek Salad</h3>
+                <img src="greek salad.jpg" alt="Greek Salad"
+                    style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                <p>Fresh veggies, feta cheese, olives, and Greek dressing.</p>
+                <span class="price">Rs.750</span>
+            </div>
+            <div class="dish">
+                <h3>Grilled Salmon</h3>
+                <img src="grilled salmon.jpg" alt="Grilled Salmon"
+                    style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                <p>Salmon fillet grilled to perfection, served with veggies.</p>
+                <span class="price">Rs.2500</span>
+            </div>
+            <div class="dish">
+                <h3>Beef Steak</h3>
+                <img src="beef steak.jpg" alt="Beef Steak"
+                    style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                <p>Juicy grilled steak with garlic butter and fries.</p>
+                <span class="price">Rs.2200</span>
+            </div>
+            <div class="dish">
+                <h3>Chicken Tikka Masala</h3>
+                <img src="chicken tikka masla.jpg" alt="Chicken Tikka Masala"
+                    style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                <p>Chicken in creamy tomato sauce, served with rice.</p>
+                <span class="price">Rs.1100</span>
+            </div>
+            <div class="dish">
+                <h3>Vegetable Stir Fry</h3>
+                <img src="vegetable stir fry.jpg" alt="Vegetable Stir Fry"
+                    style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                <p>Mixed vegetables sautéed in a savory sauce.</p>
+                <span class="price">Rs.800</span>
+            </div>
+            <div class="dish">
+                <h3>Fish & Chips</h3>
+                <img src="fish and chips.jpg" alt="Fish & Chips"
+                    style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                <p>Crispy battered fish with golden fries and tartar sauce.</p>
+                <span class="price">Rs.1700</span>
+            </div>
+            <div class="dish">
+                <h3>BBQ Ribs</h3>
+                <img src="BBQ ribs.jpg" alt="BBQ Ribs"
+                    style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                <p>Tender pork ribs glazed with BBQ sauce.</p>
+                <span class="price">Rs.900</span>
+            </div>
+            <div class="dish">
+                <h3>Paneer Butter Masala</h3>
+                <img src="paneer butter masala.jpg" alt="Paneer Butter Masala"
+                    style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                <p>Cottage cheese cubes in creamy tomato gravy.</p>
+                <span class="price">Rs.650</span>
+            </div>
+            <div class="dish">
+                <h3>Veggie Burger</h3>
+                <img src="veggie burger.jpg" alt="Veggie Burger"
+                    style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                <p>Grilled veggie patty with lettuce, tomato, and sauce.</p>
+                <span class="price">Rs.450</span>
+            </div>
+            <div class="dish">
+                <h3>Chicken Burger</h3>
+                <img src="chicken burger.jpg" alt="Chicken Burger"
+                    style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                <p>Crispy chicken fillet with cheese and spicy mayo.</p>
+                <span class="price">Rs.550</span>
+            </div>
+            <div class="dish">
+                <h3>French Fries</h3>
+                <img src="french fries.jpg" alt="French Fries"
+                    style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                <p>Golden, crispy fries served with ketchup.</p>
+                <span class="price">Rs.250</span>
+            </div>
+            <div class="dish">
+                <h3>Onion Rings</h3>
+                <img src="onion rings.jpg" alt="Onion Rings"
+                    style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                <p>Crunchy onion rings with a side of ranch dip.</p>
+                <span class="price">Rs.400</span>
+            </div>
+            <div class="dish">
+                <h3>Chocolate Lava Cake</h3>
+                <img src="chocolate lava cake.jpg" alt="Chocolate Lava Cake"
+                    style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                <p>Warm chocolate cake with a gooey center.</p>
+                <span class="price">Rs.2600</span>
+            </div>
+            <div class="dish">
+                <h3>Cheesecake</h3>
+                <img src="cheese cake.jpg" alt="Cheesecake"
+                    style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                <p>Creamy cheesecake with a graham cracker crust.</p>
+                <span class="price">Rs.2700</span>
+            </div>
+            <div class="dish">
+                <h3>Mango Lassi</h3>
+                <img src="mango lassi.jpg" alt="Mango Lassi"
+                    style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+                <p>Refreshing yogurt-based mango drink.</p>
+                <span class="price">Rs.450</span>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="about">
+        <h2>About Us</h2>
+        <p>AR Bites Restaurant is dedicated to serving mouth-watering dishes from around the world. Our chefs use
+            the freshest ingredients to create meals that delight your taste buds. Whether you're craving Italian,
+            Indian, or classic American food, we have something for everyone!</p>
+    </div>
+    <div class="container" id="contact">
+        <h2>Contact</h2>
+        <p>Address: Civil lines, Saddar, Karachi</p>
+        <p>Phone: +923162501601</p>
+        <p>Email: ali8375420@gmail.com</p>
+    </div>
+    <footer>
+        &copy; 2025 AR Bites Restaurant. All rights reserved.
+    </footer>
+</body>
+
+</html>
